@@ -33,3 +33,6 @@ w
 G.idea/sonarlint/issuestore/f/c/fcf146007330bb14605a232d25428bbf6aa50b7b,c/5/c50fa5b72baf4d32672a23e9c1257b0d617d6bb5
 J
 product-service/.gitignore,7/e/7e35b8348ccc1e9f1dba3711386c5b915291620b
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
