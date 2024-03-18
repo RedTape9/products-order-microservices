@@ -1,14 +1,22 @@
 package orderservice.service;
 
+import lombok.RequiredArgsConstructor;
 import orderservice.dto.OrderLineItemsDto;
 import orderservice.dto.OrderRequest;
 import orderservice.model.Order;
 import orderservice.model.OrderLineItems;
+import orderservice.repo.OrderRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
+@Service
+@RequiredArgsConstructor
 public class OrderService {
+
+
+    private final OrderRepository orderRepository;
     public void placeOrder(OrderRequest orderRequest) {
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
@@ -18,6 +26,8 @@ public class OrderService {
                 .map(this::mapToDto)
                 .toList();
         order.setOrderLineItemsList(orderLineItems);
+
+        orderRepository.save(order);
     }
 
     private OrderLineItems mapToDto(OrderLineItemsDto orderLineItemsDto) {
