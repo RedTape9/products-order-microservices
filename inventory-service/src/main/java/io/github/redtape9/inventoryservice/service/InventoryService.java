@@ -3,13 +3,15 @@ package io.github.redtape9.inventoryservice.service;
 import io.github.redtape9.inventoryservice.repo.InventoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
 public class InventoryService {
 
     private final InventoryRepository inventoryRepository;
+    @Transactional(readOnly = true)
     public boolean isInStock(String skuCode) {
-        inventoryRepository.findBySkuCode();
+        return inventoryRepository.findBySkuCode().isPresent();
     }
 }
