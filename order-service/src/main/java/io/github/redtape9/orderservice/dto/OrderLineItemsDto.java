@@ -1,4 +1,4 @@
-package orderservice.dto;
+package io.github.redtape9.orderservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

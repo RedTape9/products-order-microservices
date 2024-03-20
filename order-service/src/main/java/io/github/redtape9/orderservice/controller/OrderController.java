@@ -1,8 +1,8 @@
-package orderservice.controller;
+package io.github.redtape9.orderservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import orderservice.dto.OrderRequest;
-import orderservice.service.OrderService;
+import io.github.redtape9.orderservice.dto.OrderRequest;
+import io.github.redtape9.orderservice.service.OrderService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package orderservice.model;
+package io.github.redtape9.orderservice.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

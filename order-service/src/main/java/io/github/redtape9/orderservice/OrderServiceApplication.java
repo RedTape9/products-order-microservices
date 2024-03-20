@@ -1,4 +1,4 @@
-package orderservice;
+package io.github.redtape9.orderservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

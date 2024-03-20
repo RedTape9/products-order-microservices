@@ -1,11 +1,11 @@
-package orderservice.service;
+package io.github.redtape9.orderservice.service;
 
 import lombok.RequiredArgsConstructor;
-import orderservice.dto.OrderLineItemsDto;
-import orderservice.dto.OrderRequest;
-import orderservice.model.Order;
-import orderservice.model.OrderLineItems;
-import orderservice.repo.OrderRepository;
+import io.github.redtape9.orderservice.dto.OrderLineItemsDto;
+import io.github.redtape9.orderservice.dto.OrderRequest;
+import io.github.redtape9.orderservice.model.Order;
+import io.github.redtape9.orderservice.model.OrderLineItems;
+import io.github.redtape9.orderservice.repo.OrderRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
