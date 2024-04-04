@@ -29,6 +29,8 @@ public class OrderService {
                 .toList();
         order.setOrderLineItemsList(orderLineItems);
 
+        // call inventoryservice to check if the items are available and place order
+
         orderRepository.save(order);
     }
 
