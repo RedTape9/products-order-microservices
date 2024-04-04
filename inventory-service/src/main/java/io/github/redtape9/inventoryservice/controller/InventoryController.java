@@ -16,8 +16,8 @@ public class InventoryController {
 
     private final InventoryService inventoryService;
 
-    // http://localhost:8082/api/inventory/redmi_tote_13,Samsung,Galaxy_S21_FE
-    // http://localhost:8082/api/inventory?sku-code=redmi_tote_13&sku-code=Samsung_Galaxy_S21_FE
+    // http://localhost:8082/api/inventory/xiaomi_redmi_note_13,samsung_galaxy_s21_fe
+    // http://localhost:8082/api/inventory?skuCode=xiaomi_redmi_note_13&sku-code=samsung_galaxy_s21_fe
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<InventoryResponse> isInStock(@RequestParam List<String> skuCode){

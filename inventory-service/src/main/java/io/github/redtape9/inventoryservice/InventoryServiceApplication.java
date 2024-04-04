@@ -17,8 +17,8 @@ public class InventoryServiceApplication {
 	@Bean
 	public CommandLineRunner loadData(InventoryRepository inventoryRepository) {
 		return args -> {
-			inventoryRepository.save(new Inventory(123L,"Samsung Galaxy S21 FE", 3));
-			inventoryRepository.save(new Inventory(321L,"Xiaomi Redmi Note 13", 0));
+			inventoryRepository.save(new Inventory(123L,"samsung_galaxy_s21_fe", 3));
+			inventoryRepository.save(new Inventory(321L,"xiaomi_redmi_note_13", 0));
 		};
 	}
 }
